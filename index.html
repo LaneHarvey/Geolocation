@@ -58,7 +58,7 @@
   </style>
   <script>
     const arrow = document.querySelector('.arrow');
-    const speed = document.querySelector('.speed-value');
+    const speed = document.querySelector('.speed');
 
     navigator.geolocation.watchPosition((data) => {
       console.log(data);
@@ -66,8 +66,9 @@
       arrow.style.transform = `rotate(${data.coords.heading}deg)`;
     }, (err) => {
       console.err(err);
-      alert('HEY! YOU GOTTA ALLOW THAT TO HAPPEN!!!');
+      alert('Hey!! You gotta allow to see it work!!');
     });
+
 
   </script>
 </body>
